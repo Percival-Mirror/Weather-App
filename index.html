@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Weather App (JS only)</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<!-- Fuentes -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<main>
+		
+		<div class="main-container" data-weather="none">
+
+			<div class="app-container">
+		
+				<div class="search">
+					<input class="search-input" type="text" name="search" placeholder="Ingrese ciudad...">
+					<button class="search-button">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+						  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+						</svg>
+					</button>
+				</div>
+
+				<div class="error">
+					Ingrese un nombre válido
+				</div>
+
+				<div class="weather-container">
+					<img class="weather-icon" src="media/icons/sun.png">
+					<div class="temperature">22°c</div>
+					<div class="city-name">Hollywood</div>
+					<div class="details">
+						<div class="humidity-container">
+							<img src="media/icons/humidity.png">
+							<div class="humidity">
+								<p>50%</p>
+								<p>Humedad</p>
+							</div>
+						</div>
+						
+						<div class="windspeed-container">
+							<img src="media/icons/wind.png">
+							<div class="windspeed">
+								<p>20 Km/h</p>
+								<p>Viento</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+	</main>
+
+	<script defer type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
